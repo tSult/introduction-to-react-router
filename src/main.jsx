@@ -1,8 +1,8 @@
-import React, { Children } from 'react'
+import React, { children } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-import App from './App.jsx'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,13 +10,14 @@ import {
 import Home from './Components/Home/Home.jsx';
 import About from './Components/About/About.jsx';
 import Contact from './Components/Contact/Contact.jsx';
+import Users from './Components/Users/Users.jsx';
 //import Header from './Components/Header/Header.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    Children:[
+    children:[
       {
         path:'/about',
         element:<About></About>
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path:'/contact',
         element:<Contact></Contact>
+      },
+      {
+        path:'/users',
+        element:<Users></Users>
       }
     ]
   },
