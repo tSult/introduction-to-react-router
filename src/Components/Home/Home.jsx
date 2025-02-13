@@ -5,10 +5,9 @@ import Footer from "../Footer/Footer";
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+             <Header></Header>
              <Outlet></Outlet>
-             <Footer></Footer>
-          
+             <Footer></Footer>       
         </div>
     );
 };
